@@ -62,8 +62,8 @@ class BurpExtender(IBurpExtender, IHttpListener, IScannerListener):
 	print "Closing Burp in", self.packet_timeout, "seconds."
 	time.sleep(self.packet_timeout)
 
-	if self.clivars:
-		self._callbacks.exitSuite(False)
+	#if self.clivars:
+	#	self._callbacks.exitSuite(False)
 		
 	return
 
